@@ -9,8 +9,8 @@
 
 <?php
 // define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
+$nameErr = $apellidoErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $apellido = $email = $gender = $comment = $website = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
@@ -22,6 +22,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $nameErr = "solo se admiten letras y espacios en blanco";
     }
   }
+  if (empty($_POST["apellido"])) {
+    $apellidoErr = "el apellido es obligatorio";
+  } else {
+    $apellido = test_input($_POST["apellido"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z-' ]*$/",$apellido)) {
+      $apellidoErr = "solo se admiten letras y espacios en blanco";
+    }
+  }
+
   
   if (empty($_POST["email"])) {
     $emailErr = "se requiere el email";
@@ -69,6 +79,9 @@ function test_input($data) {
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name: <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>
+  Apellido: <input type="text" name="apellido" value="<?php echo $apellido;?>">
+  <span class="error">* <?php echo $apellidoErr;?></span>
   <br><br>
   E-mail: <input type="text" name="email" value="<?php echo $email;?>">
   <span class="error">* <?php echo $emailErr;?></span>
