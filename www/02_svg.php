@@ -18,7 +18,7 @@
 $posx=20;
 while ($posx<500){
 echo '<circle cx="'. $posx .'" cy="100" r="40" stroke="black" stroke-width="5" fill="red" />';
-$posx=$posx+50;
+$posx=$posx+15;
 }
 ?>
 </svg>
