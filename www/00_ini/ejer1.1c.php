@@ -7,12 +7,12 @@
 </head>
 <body>
    
-<svg height="1000" width="1000">
- <circle cx="500" cy="500" r="400" stroke="black" stroke-width="3" fill="yellow" />
- <circle cx="500" cy="500" r="300" stroke="black" stroke-width="3" fill="red" />
- <circle cx="500" cy="500" r="200" stroke="black" stroke-width="3" fill="blue" />
- <circle cx="500" cy="500" r="150" stroke="black" stroke-width="3" fill="purple" />
- <circle cx="500" cy="500" r="100" stroke="black" stroke-width="3" fill="white" />
+<svg height="100" width="100">
+ <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="yellow" />
+ <circle cx="50" cy="50" r="30" stroke="black" stroke-width="3" fill="red" />
+ <circle cx="50" cy="50" r="20" stroke="black" stroke-width="3" fill="blue" />
+ <circle cx="50" cy="50" r="15" stroke="black" stroke-width="3" fill="purple" />
+ <circle cx="50" cy="50" r="10" stroke="black" stroke-width="3" fill="white" />
 
 
 
