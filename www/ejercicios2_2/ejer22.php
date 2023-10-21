@@ -11,7 +11,6 @@ $jugador1_dado1 = rand(1, 6);
 $jugador1_dado2 = rand(1, 6); 
 $jugador2_dado1 = rand(1, 6); 
 $jugador2_dado2 = rand(1, 6); 
-// if y primer elif sacado de chatgpt porque con los echo dentro de cada condicion me daba error y no sabia plantearlo
 if ($jugador1_dado1 == $jugador1_dado2 && $jugador2_dado1 != $jugador2_dado2) {
     $ganador = "Jugador 1";
     $ganadorColor = "blue";
