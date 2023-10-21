@@ -15,7 +15,6 @@ echo '<img src="/Recursos/' . $dado2 . '.svg" >';
 echo '<img src="/Recursos/' . $dado1 . '.svg" >';
 echo "<br>";
 echo 'la suma de los dados es: ' . ($dado1 + $dado2);
-
 ?>
 </body>
 </html>

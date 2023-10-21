@@ -26,13 +26,8 @@ echo '<img src="Recursos/' . $palo[0] . $cartas[1] . '.svg" width="100" height="
 echo '<img src="Recursos/' . $palo[0] . $cartas[2] . '.svg" width="100" height="100">';
 echo '<br>';
 
-
-
 $valorMasAlto = max($cartas);
 echo 'El valor más alto de las tres cartas es: ' . $valorMasAlto;
 ?>
-
-
-
 </body>
 </html>

@@ -16,9 +16,6 @@ echo '<circle cx="'. $posx .'" cy="100" r="40" stroke="black" stroke-width="5" f
 $posx=$posx+50;
 }
 ?>
-
 </svg>
-
-
 </body>
 </html>

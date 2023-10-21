@@ -18,6 +18,5 @@ echo '<img src="/Recursos/' . $dado1 . '.svg " " style="width: 5%"style="height=
 $numerodados++;
 }
 ?>
-
 </body>
 </html>

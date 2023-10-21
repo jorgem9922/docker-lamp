@@ -8,8 +8,7 @@
 <body>
 
 <?php 
-// $i=1;
-// while ($i<){
+
 $dado1=rand(1,6);
 $dado2=rand(1,6);
 echo '<img src="/Recursos/' . $dado2 . '.svg " alt="">';
@@ -26,18 +25,8 @@ echo 'dado 2 vence a dado 1';
 }
 else{
 echo'empate';
-
 }
-// $i++;
-// }
-?>
-
-<!-- <svg height="500" width="1000"> -->
-
-
-<?php
 ?>
 </svg>
-
 </body>
 </html>
