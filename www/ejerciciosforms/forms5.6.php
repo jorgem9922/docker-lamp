@@ -10,20 +10,19 @@
     <input type="submit" value="Enviar">
   </form>
   <?php
-// Obtener el número ingresado por el usuario
+// Obtener el número 
 $numero = $_POST['numero'];
-
-// Generar el código SVG para los cuadrados de colores
 $svg = '<svg width="800" height="800">';
 for ($i = 0; $i < $numero; $i++) {
-    // Generar una posición aleatoria para el cuadrado
+    //  posición aleatoria de la posicion del cuadrado
+
     $x = rand(0, 800);
     $y = rand(0, 800);
 
-    // Generar un color aleatorio en formato hexadecimal
+    // color aleatorio
     $color = '#' . dechex(rand(0x000000, 0xFFFFFF));
 
-    // Agregar el cuadrado al código SVG
+    //  cuadrado SVG
     $svg .= '<rect x="' . $x . '" y="' . $y . '" width="50" height="50" fill="' . $color . '"/>';
 }
 $svg .= '</svg>';
