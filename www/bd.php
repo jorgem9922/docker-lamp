@@ -11,9 +11,9 @@
     <body>
         <div class="container-fluid">
             <?php
-                echo "<h1>¡El colegio!</h1>";
-
-                $conn = mysqli_connect('db', 'root', 'test', "colegio");
+                echo "<h1>¡El colegio de jorge</h1>";
+//recuerda cambiar el db por localhost y el usuario la contraseña y el nombre por la bd propia
+                $conn = mysqli_connect('localhost', 'root', 'Isoasix2023', "colegio_jorge");
 
                 $query = 'select estudiantes.nombre as A, materias.nombre as B, notas_estudiantes_materias.puntaje as C
                 from estudiantes, materias, notas_estudiantes_materias 
